@@ -12,13 +12,7 @@
 </p>
 <br>
 <p align="center">
-    <a href="mailto:lucianofullstack@duck.com?subject=I%20saw%20your%20GitHub%20Profilee&body=Hi,%20Luciano%20">
-      <img height="26px" src="./assets/mail.svg" alt="mail">
-    </a>
-    <a href="https://www.linkedin.com/in/lucianofullstack">
-      <img height="26px" src="./assets/linkedin.svg" alt="LinkedIn">
-    </a>
-    <a href="https://bit.ly/lucianofullstack">
-      <img height="26px" src="./assets/whatsapp.svg" alt="whatsapp">
-    </a>
+    <a href="mailto:lucianofullstack@duck.com?subject=I%20saw%20your%20GitHub%20Profilee&body=Hi,%20Luciano%20"><img height="26px" src="./assets/mail.svg" alt="mail"></a>
+    <a href="https://www.linkedin.com/in/lucianofullstack"><img height="26px" src="./assets/linkedin.svg" alt="LinkedIn"></a>
+    <a href="https://bit.ly/lucianofullstack"><img height="26px" src="./assets/whatsapp.svg" alt="whatsapp"></a>
 </p>
