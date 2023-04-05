@@ -105,3 +105,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.yiiframework.com/"><img height="42px" src="./assets/icons/yii.svg"          alt="yii"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://framework.zend.com/"><img height="42px" src="./assets/icons/zend.svg"         alt="zend"></a>
 </p></details>
+
+<details open>
+  <summary><h3>Stats <i>(collapsible)</i></h3></summary><br>
+  <p align="left">
+    <img width="350px" src="https://github-readme-stats.vercel.app/api/top-langs?username=lucianofullstack&show_icons=true&theme=transparent&locale=en&layout=default&hide_border=true" alt="my stats language">
+    <img width="550px" src="https://github-readme-stats.vercel.app/api?username=lucianofullstack&show_icons=true&theme=transparent&locale=en&hide_border=true">
+</p>
+</details>
