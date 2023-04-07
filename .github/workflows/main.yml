@@ -16,4 +16,5 @@ jobs:
           commits_authoring: Luciano Pereira, lucianofullstack, lucianofullstack@users.noreply.github.com
           extras_css: |
             h1.field, h2.field, h3.field { color: #969289!important }
+            footer {display: none!important}
           token: ${{ secrets.METRICS_TOKEN }}
