@@ -14,4 +14,6 @@ jobs:
           plugin_languages: yes
           plugin_languages_indepth: yes
           commits_authoring: Luciano Pereira, lucianofullstack, lucianofullstack@users.noreply.github.com
+          extras_css: |
+            h2.field { color: #969289!important }
           token: ${{ secrets.METRICS_TOKEN }}
