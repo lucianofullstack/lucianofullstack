@@ -100,7 +100,7 @@
 <a href="https://jupyter.org"><img height="24px" src="./assets/icons/jupyter.svg" alt="jupyter"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://laravel.com"><img height="24px" src="./assets/icons/laravel.svg" alt="laravel"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <a href="https://www.latex-project.org"><img height="24px" src="./assets/icons/latex.svg" alt="latex"></a>
 </p>
 <p align="center">
