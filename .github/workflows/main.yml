@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lucianofullstack/metrics@main
+      - uses: lucianofullstack/metrics
         with:
           plugin_languages: yes
           plugin_languages_indepth: yes
