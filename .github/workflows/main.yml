@@ -9,9 +9,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lucianofullstack/metrics@latest
         with:
-          filename: ./assets/metrics.svg
           plugin_languages: yes
           plugin_languages_indepth: yes
           commits_authoring: Luciano Pereira, lucianofullstack, lucianofullstack@users.noreply.github.com
