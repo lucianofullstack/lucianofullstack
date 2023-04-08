@@ -19,10 +19,7 @@
 <p align="center">
   <img src="github-metrics.svg">
 </p>
-<p align="center">      <a href="https://apache.org/">                      <img height="24px" src="./assets/icons/apache.svg"    alt="Apache"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://apple.com">                        <img height="24px" src="./assets/icons/apple.svg"     alt="Apple"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.arduino.cc/">                  <img height="24px" src="./assets/icons/arduino.svg"   alt="Arduino"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.gnu.org/software/bash/">       <img height="24px" src="./assets/icons/bash.svg"      alt="bash"></a>
+<p align="center"><a href="https://apache.org/"><img height="24px" src="./assets/icons/apache.svg" alt="Apache"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://apple.com"><img height="24px" src="./assets/icons/apple.svg" alt="Apple"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.arduino.cc"><img height="24px" src="./assets/icons/arduino.svg" alt="Arduino"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.gnu.org/software/bash/"><img height="24px" src="./assets/icons/bash.svg" alt="bash"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bitbucket.org">                    <img height="24px" src="./assets/icons/bitbucket.svg" alt="Bitbucket"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://getbootstrap.com/">                <img height="24px" src="./assets/icons/bootstrap.svg" alt="bootstrap"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.open-std.org/jtc1/sc22/wg14/"> <img height="24px" src="./assets/icons/c.svg"         alt="c language"></a>
