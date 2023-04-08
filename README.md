@@ -23,7 +23,7 @@
 <a href="https://apache.org"><img height="24px" src="./assets/icons/apache.svg" alt="Apache"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://apple.com"><img height="24px" src="./assets/icons/apple.svg" alt="Apple"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.arduino.cc"><img height="24px" src="./assets/icons/arduino.svg" alt="Arduino"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.gnu.org/software/bash"><img height="24px" src="./assets/icons/bash.svg" alt="bash"></a>
