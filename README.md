@@ -19,7 +19,7 @@
 <p align="center">
  <img src="metrics.svg" alt="GitHub Metrics">
 </p>
-<p align="center">
+<p align="center">&nbsp;
 <a href="https://apache.org"><img height="24px" src="./assets/icons/apache.svg" alt="Apache"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://apple.com"><img height="24px" src="./assets/icons/apple.svg" alt="Apple"></a>
