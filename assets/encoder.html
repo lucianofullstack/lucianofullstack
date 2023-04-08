@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  charset="utf-8">
+	<meta  name="robots"   content="noindex, nofollow">	
+	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="simple.min.css" rel="stylesheet" type="text/css">
+    <title>Mail Encoder</title>
+    <style>
+        button { float: right }
+        span {font-size:larger;vertical-align: bottom;padding-right: .3rem}
+        #key { width : 3rem; text-align: right }
+    </style>
+    <script>
+        function validEmail(email) {
+             const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            return res.test(String(email).toLowerCase())
+        }
+        function encodeEmail(email, key) {
+            let encodedString = 
+                key
+               .toString(16)
+               .padStart(2,'0')
+            for ( let n=0              ; 
+                      n < email.length ; 
+                      n++ 
+            ) {
+                encodedString += 
+                ( email
+                 .charCodeAt(n) ^ key 
+                ).toString(16)
+                 .padStart(2,'0')
+            }
+            return encodedString
+        }
+        function generateEmail(email, key)
+        {
+            encoded.value = ''
+            encoded.disabled = true
+             button.disabled = true
+            if ( validEmail(email) ) {
+                 button.disabled = false
+                encoded.disabled = false
+                encoded.value    = `<a href="#" class="eml" data-encoded= "${encodeEmail(email, key)}">[contact]</a>` 
+            }
+        }
+        window
+        .addEventListener ('load', (event) => {
+            const
+            id      = (id) => document.getElementById(id) , 
+            email   =  id ('email')  ,
+            key     =  id ('key')    ,
+            button  =  id ('button') , 
+            encoded =  id ('encoded')
+            key
+            .addEventListener ( 'keyup', function (e) {             
+                if (e.which < 48 || e.which > 57) {
+                    e.preventDefault()
+                }
+                generateEmail( email.value, Number(this.value) )
+            })
+            email
+            .addEventListener ( 'keyup', function () { 
+             generateEmail ( this.value , Number(key.value) ) 
+            })
+            button
+            .addEventListener ( 'click', function(e) {
+             e.preventDefault()
+             navigator.clipboard.writeText(encoded.value)
+            })
+            if ( !navigator.clipboard ) {
+               button.hidden = true
+            }
+        })
+    </script>
+</head>
+<body>
+    <h2><span>&#128231;</span>Encoder</h2>
+    <form>
+        <p>
+            <label  for="email">Email</label>
+            <input name="email" id="email" type="email" title="email" autofocus size="80">
+        </p>
+        <p>
+            <label     for="encoded">Encoded Link</label>
+            <textarea name="encoded" title="encoded" id="encoded" rows="3" spellcheck="false" disabled></textarea>
+        </p>
+        <p>
+            <label  for="key">Key</label>
+            <input name="key" id="key" type="text" title="key" autofocus maxlength="3" value="156">
+            <button type="button" id="button" disabled="disabled">Copy</button>
+        </p>
+    </form>
+    <details>
+        <summary>Parser &amp; Decoder</summary>
+        <div>
+<pre>
+const emlParser = (encoded) => {
+  let 
+  decEml   = '' ,
+  keyInHex = encoded.substr (0, 2) ,
+  key      = parseInt (keyInHex, 16)
+  for (let n = 2; 
+           n < encoded.length; 
+           n += 2
+  ) {
+      let
+      charInHex = encoded.substr (n, 2) ,
+      char      = parseInt (charInHex, 16) ,
+      output    = char ^ key
+      decEml += String.fromCharCode (output)
+    }
+    return decEml
+} 
+function emlDecoder() {
+  const 
+  eml = 
+  document.getElementsByClassName("eml")
+  for (let i = 0; i < eml.length; i++) {
+    let 
+    elEml = eml[i] ,
+    encoded = elEml.dataset.encoded,
+    decoded = emlParser(encoded)
+    elEml.textContent = decoded
+    elEml.href = 'mailto:' + decoded  
+  }
+} emlDecoder()
+</pre></div>
+</details>
+</body>
+</html>

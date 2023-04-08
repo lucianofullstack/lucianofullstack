@@ -440,3 +440,4 @@ a span, svg, footer, hr, #goup {display:none!important}
     margin-bottom: -150px;
 }
 }
+.clear { clear:both }
