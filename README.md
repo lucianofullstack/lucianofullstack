@@ -16,17 +16,9 @@
     <a href="https://www.linkedin.com/in/lucianofullstack"><img height="26px" src="./assets/linkedin.svg" alt="LinkedIn"></a>
     <a href="https://bit.ly/lucianofullstack"><img height="26px" src="./assets/whatsapp.svg" alt="whatsapp"></a>
 </p>
-
-<details open>
-  <summary><h6>📈 Metrics <i>(collapsible)</i></h6></summary><br>
-  <p align="center">
-    <img src="github-metrics.svg">
-  </p>
-</details>
-
-
-<details open>
-  <summary><h3>Technologies <i>(collapsible)</i></h3></summary><br/>&nbsp;
+<p align="center">
+  <img src="github-metrics.svg">
+</p>
 <p align="center">      <a href="https://apache.org/">                      <img height="24px" src="./assets/icons/apache.svg"    alt="Apache"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://apple.com">                        <img height="24px" src="./assets/icons/apple.svg"     alt="Apple"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.arduino.cc/">                  <img height="24px" src="./assets/icons/arduino.svg"   alt="Arduino"></a>
@@ -112,5 +104,4 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://wordpress.org/"><img height="24px" src="./assets/icons/wordpress.svg"    alt="wordpress"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.yiiframework.com/"><img height="24px" src="./assets/icons/yii.svg"          alt="yii"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://framework.zend.com/"><img height="24px" src="./assets/icons/zend.svg"         alt="zend"></a>
-</p></details>
-
+</p>
