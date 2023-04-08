@@ -17,7 +17,7 @@
  <a href="https://bit.ly/lucianofullstack"><img height="26px" src="./assets/whatsapp.svg" alt="whatsapp"></a>
 </p>
 <p align="center">
- <img src="github-metrics.svg" alt="GitHub Metrics">
+ <img src="metrics.svg" alt="GitHub Metrics">
 </p>
 <p align="center">
 <a href="https://apache.org"><img height="24px" src="./assets/icons/apache.svg" alt="Apache"></a>
