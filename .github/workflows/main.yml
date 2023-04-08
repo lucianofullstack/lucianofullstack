@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: /assets/metrics.svg
+          filename: ./assets/metrics.svg
           plugin_languages: yes
           plugin_languages_indepth: yes
           commits_authoring: Luciano Pereira, lucianofullstack, lucianofullstack@users.noreply.github.com
