@@ -82,9 +82,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://html.spec.whatwg.org"><img height="24px" src="./assets/icons/html5.svg" alt="html5"></a>
 </p>
-<p align="center">&nbsp;
+<p align="center">&nbsp;&nbsp;
 <a href="https://gohugo.io"><img height="24px" src="./assets/icons/hugo.svg" alt="hugo"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <a href="https://www.adobe.com/ar/products/illustrator.html"><img height="24px" src="./assets/icons/illustrator.svg" alt="illustrator"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://inkscape.org"><img height="24px" src="./assets/icons/inkscape.svg" alt="inkscape"></a>
