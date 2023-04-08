@@ -1,10 +1,10 @@
 <p align="center">
- <a href="https://lucianofullstack.github.io/lucianopereira">
+ <a href="https://lucianofullstack.pages.dev">
  <img src="./assets/lucianopereira.svg" alt="Luciano Pereira">
  </a>
 </p>
 <p align="center">
- <a href="https://lucianofullstack.github.io/lucianopereira">
+ <a href="https://lucianofullstack.pages.dev/">
  <img src="./assets/signature.svg" width="250px" alt="Luciano Pereira Signature">
  <br>
  <img src="./assets/resume.svg" height="250px" alt="Luciano Pereira Resume">
@@ -100,7 +100,7 @@
 <a href="https://jupyter.org"><img height="24px" src="./assets/icons/jupyter.svg" alt="jupyter"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://laravel.com"><img height="24px" src="./assets/icons/laravel.svg" alt="laravel"></a>
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
 <a href="https://www.latex-project.org"><img height="24px" src="./assets/icons/latex.svg" alt="latex"></a>
 </p>
 <p align="center">
