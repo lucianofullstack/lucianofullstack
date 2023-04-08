@@ -18,6 +18,14 @@
 </p>
 
 <details open>
+  <summary><h3>📈 Metrics <i>(collapsible)</i></h3></summary><br>
+  <p align="center">
+    <img src="github-metrics.svg">
+  </p>
+</details>
+
+
+<details open>
   <summary><h3>Technologies <i>(collapsible)</i></h3></summary><br/>&nbsp;
 <p align="center">      <a href="https://apache.org/">                      <img height="42px" src="./assets/icons/apache.svg"    alt="Apache"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://apple.com">                        <img height="42px" src="./assets/icons/apple.svg"     alt="Apple"></a>
@@ -106,7 +114,3 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://framework.zend.com/"><img height="42px" src="./assets/icons/zend.svg"         alt="zend"></a>
 </p></details>
 
-<details open>
-  <summary><h3>Stats <i>(collapsible)</i></h3></summary><br>
- <img src="github-metrics.svg">
-</details>
