@@ -198,6 +198,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://framework.zend.com"><img height="24px" src="./assets/icons/zend.svg" alt="zend"></a>
 </p>
-###  ✒️ Articles
+<h3>✒️ Articles</h3>
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
