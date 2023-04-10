@@ -200,4 +200,5 @@
 </p>
 <h4>✒️ Articles</h4>
 <!-- BLOG-POST-LIST:START -->
+- [Star Rating using CSS](https://lucianofullstack.github.io/articles/css/2023/04/10/star-rating-using-css.html)
 <!-- BLOG-POST-LIST:END -->
