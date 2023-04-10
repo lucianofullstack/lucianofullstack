@@ -200,4 +200,4 @@
 </p>
 <h4>✒️ Articles</h4>
 <!-- BLOG-POST-LIST:START -->
- 📅  2023-04-10 <a href='https://lucianofullstack.github.io/articles/css/2023/04/10/star-rating-using-css.html'>Star Rating using CSS</a><!-- BLOG-POST-LIST:END -->
+ 📅  2023-04 <a href='https://lucianofullstack.github.io/articles/css/2023/04/10/star-rating-using-css.html'>Star Rating using CSS</a><!-- BLOG-POST-LIST:END -->
