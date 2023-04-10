@@ -16,5 +16,5 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://lucianofullstack.github.io/articles/feed.xml"
-          date_format: 'UTC: yyyy-mm-dd'
+          date_format: 'UTC: yyyy-mm'
           template: "$newline 📅 $date <a href='$url'>$title</a>"
