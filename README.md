@@ -16,6 +16,9 @@
  <a href="https://www.linkedin.com/in/lucianofullstack"><img height="26px" src="./assets/linkedin.svg" alt="LinkedIn"></a>
  <a href="https://bit.ly/lucianofullstack"><img height="26px" src="./assets/whatsapp.svg" alt="whatsapp"></a>
 </p>
+<h4>✒️ Articles</h4>
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 <p align="center">
  <img src="metrics.svg" alt="GitHub Metrics">
 </p>
@@ -198,7 +201,3 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://framework.zend.com"><img height="24px" src="./assets/icons/zend.svg" alt="zend"></a>
 </p>
-<h4>✒️ Articles</h4>
-<!-- BLOG-POST-LIST:START -->
-- [Star Rating using CSS](https://lucianofullstack.github.io/articles/css/2023/04/10/star-rating-using-css.html)
-<!-- BLOG-POST-LIST:END -->
