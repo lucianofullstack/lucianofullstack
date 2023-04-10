@@ -16,3 +16,4 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://lucianofullstack.github.io/articles/feed.xml"
+          template: "$newline <a href='$url'>$title</a>"
