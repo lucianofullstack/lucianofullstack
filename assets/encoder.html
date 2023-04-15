@@ -75,6 +75,9 @@
                 if (e.which < 47 || e.which > 57) {
                     e.preventDefault()
                 }
+                if (Number(this.value) > 255) {
+                   this.value = 255; 
+                }
                 generateEmail( email.value, Number(this.value) )
             })
             email
