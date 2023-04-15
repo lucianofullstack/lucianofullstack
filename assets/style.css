@@ -7,12 +7,12 @@
 		       --c3: #55B2E6  ;
 		       --c4: #1a202c  ;
 } [data-theme="light"] {
-	               --bg: #f5f6fa  ;
-	               --fg: #141922  ;
-		       --c1: #4A90E2  ;
-		       --c2: #141922  ;
-		       --c3: #364ab2  ;
-		       --c4: #dcdbde  ;
+	           --bg: #eafaff  ;
+	           --fg: #111728  ;
+		       --c1: #b5d5ff  ;
+		       --c2: #111728  ;
+		       --c3: #7895bf  ;
+		       --c4: #d5f5ff  ;
 } @font-face           {
             font-family: 'Mona Sans';
                     src:
@@ -28,11 +28,11 @@
 -webkit-font-smoothing : antialiased;
         scroll-behavior: smooth;
              overflow-x: hidden;
-} *::-webkit-scrollbar
+} ::-webkit-scrollbar
 		{	width: 12px;
-		}	*::-webkit-scrollbar-track
+		}	::-webkit-scrollbar-track
 		{	background: var(--bg);
-		}	*::-webkit-scrollbar-thumb
+		}	::-webkit-scrollbar-thumb
 		{	background-color: var(--c1);
 			border-radius: 20px;
 			border: 3px solid var(--bg);	
