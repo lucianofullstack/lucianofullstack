@@ -9,6 +9,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: ":octocat: Luciano Fullstack"
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
@@ -16,7 +17,8 @@ jobs:
           plugin_languages_indepth: yes
           commits_authoring: Luciano Pereira, lucianofullstack, lucianofullstack@users.noreply.github.com
           extras_css: |
-            h1.field, h2.field, h3.field { color: #969289!important }
+            h1.field { color: #25d366!important }
+            h2.field, h3.field { color: #969289!important }
             .field svg { fill:#969289!important}
             footer {display: none!important}
           token: ${{ secrets.METRICS_TOKEN }}
