@@ -72,7 +72,7 @@
             encoded =  id ('encoded')
             key
             .addEventListener ( 'keyup', function (e) {             
-                if (e.which < 48 || e.which > 57) {
+                if (e.which < 47 || e.which > 57) {
                     e.preventDefault()
                 }
                 generateEmail( email.value, Number(this.value) )
