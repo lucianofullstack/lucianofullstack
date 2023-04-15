@@ -10,7 +10,6 @@
  <img src="./assets/resume.svg" height="250px" alt="Luciano Pereira Resume">
  </a>
 </p>
-<br>
 <p align="center">
 <a href="mailto:lucianofullstack@duck.com?subject=I%20saw%20your%20GitHub%20Profilee&body=Hi,%20Luciano%20"><img height="26px" src="./assets/mail.svg" alt="mail"></a>
 <br>
