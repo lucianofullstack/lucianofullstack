@@ -9,7 +9,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Luciano Fullstack
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
