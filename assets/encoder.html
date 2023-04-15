@@ -2,14 +2,32 @@
 <html lang="en">
 <head>
     <meta  charset="utf-8">
-	<meta  name="robots"   content="noindex, nofollow">	
+	<meta  name="robots"   content="noindex, nofollow">
 	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="simple.min.css" rel="stylesheet" type="text/css">
     <title>Mail Encoder</title>
     <style>
-        button { float: right }
-        span {font-size:larger;vertical-align: bottom;padding-right: .3rem}
-        #key { width : 3rem; text-align: right }
+        button {
+            float: right
+        }
+        span {
+            font-size: larger;
+            vertical-align: bottom;
+            padding-right: .3rem
+        }
+        #key {
+            width: 3rem;
+            text-align: right
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+            appearance: textfield;
+        }
     </style>
     <script>
         function validEmail(email) {
@@ -87,21 +105,21 @@
         </p>
         <p>
             <label  for="key">Key</label>
-            <input name="key" id="key" type="text" title="key" autofocus maxlength="3" value="156">
-            <button type="button" id="button" disabled="disabled">Copy</button>
+            <input name="key" id="key" type="number" title="key" autofocus min="0" max="256" value="156">
+            <button type="submit" id="button" disabled>Copy</button>
         </p>
     </form>
     <details>
         <summary>Parser &amp; Decoder</summary>
         <div>
 <pre>
-const emlParser = (encoded) => {
-  let 
+const emlParser = (encoded) =&gt; {
+  let
   decEml   = '' ,
   keyInHex = encoded.substr (0, 2) ,
   key      = parseInt (keyInHex, 16)
-  for (let n = 2; 
-           n < encoded.length; 
+  for (let n = 2;
+           n &lt; encoded.length;
            n += 2
   ) {
       let
@@ -111,21 +129,22 @@ const emlParser = (encoded) => {
       decEml += String.fromCharCode (output)
     }
     return decEml
-} 
+}
 function emlDecoder() {
-  const 
-  eml = 
+  const
+  eml =
   document.getElementsByClassName("eml")
-  for (let i = 0; i < eml.length; i++) {
-    let 
+  for (let i = 0; i &lt; eml.length; i++) {
+    let
     elEml = eml[i] ,
     encoded = elEml.dataset.encoded,
     decoded = emlParser(encoded)
     elEml.textContent = decoded
-    elEml.href = 'mailto:' + decoded  
+    elEml.href = 'mailto:' + decoded
   }
 } emlDecoder()
-</pre></div>
+</pre>
+</div>
 </details>
 </body>
 </html>
