@@ -201,5 +201,5 @@
 </p>
 <h4>✒️ Articles</h4>
 <!-- BLOG-POST-LIST:START -->
- 📅  2023-04 <a href='https://lucianofullstack.github.io/articles/javascript/2023/04/15/js-email-obfuscation.html'>Email obfuscation using JavaScript</a>
- 📅  2023-04 <a href='https://lucianofullstack.github.io/articles/css/2023/04/10/star-rating-using-css.html'>Star Rating using CSS</a><!-- BLOG-POST-LIST:END -->
+ <p>📅  2023-04 <a href='https://lucianofullstack.github.io/articles/javascript/2023/04/15/js-email-obfuscation.html'>Email obfuscation using JavaScript</a></p>
+ <p>📅  2023-04 <a href='https://lucianofullstack.github.io/articles/css/2023/04/10/star-rating-using-css.html'>Star Rating using CSS</a></p><!-- BLOG-POST-LIST:END -->
