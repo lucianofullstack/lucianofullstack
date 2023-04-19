@@ -17,4 +17,4 @@ jobs:
         with:
           feed_list: "https://lucianofullstack.github.io/articles/feed.xml"
           date_format: 'UTC: yyyy-mm'
-          template: "$newline 📅 $date <a href='$url'>$title</a>"
+          template: "$newline <p>📅 $date <a href='$url'>$title</a></p>"
