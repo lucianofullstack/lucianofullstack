@@ -1,4 +1,4 @@
-const 
+const
          log = console.log,
 toggleSwitch = document.getElementById('dark'),
 currentTheme = localStorage.getItem('theme')
@@ -19,12 +19,12 @@ function switchTheme(e) {
 toggleSwitch.addEventListener('change', switchTheme, false)
 
 const emlParser = (encoded) => {
-  let 
+  let
   decEml   = '' ,
   keyInHex = encoded.substr (0, 2) ,
   key      = parseInt (keyInHex, 16)
-  for (let n = 2; 
-           n < encoded.length; 
+  for (let n = 2;
+           n < encoded.length;
            n += 2
   ) {
       let
@@ -34,13 +34,13 @@ const emlParser = (encoded) => {
       decEml += String.fromCharCode (output)
     }
     return decEml
-} 
+}
 function emlDecoder() {
- const 
- eml = 
+ const
+ eml =
  document.getElementsByClassName("eml")
  for (let i = 0; i < eml.length; i++) {
-  let 
+  let
   elEml = eml[i] ,
   encoded = elEml.dataset.encoded,
   decoded = emlParser(encoded)
@@ -48,16 +48,16 @@ function emlDecoder() {
  }
 } emlDecoder()
 
-window.onscroll = function () 
+window.onscroll = function ()
 {
-    let  nav = document.getElementById('dark') 
-    let  top = document.getElementById('goup') 
+    let  nav = document.getElementById('dark')
+    let  top = document.getElementById('goup')
     let fija = nav.offsetTop
-    if (window.pageYOffset > fija) { 
-        top.classList.remove("hidden") 
-    } else { 
-        top.classList.add("hidden") 
-    } 
+    if (window.scrollY > fija) {
+        top.classList.remove("hidden")
+    } else {
+        top.classList.add("hidden")
+    }
 }
 
 
@@ -65,9 +65,9 @@ const addAnimation = (c, even, odd) => {
   let num = 0
   for (el of c) {
     num++
-    el.classList.add('josh-js') 
+    el.classList.add('josh-js')
     el.dataset.joshAnimName = (num % 2) ? even : odd
-  }   
+  }
 }
 
 const timelines = document.getElementsByClassName('timelineUl')
@@ -98,10 +98,10 @@ class Josh {
       const notMobile = !this.animateInMobile && this.isMobile();
       entries.forEach((entry) => {
         const targetElm = entry.target;
-        const name = targetElm.dataset.joshAnimName, 
-          iteration = targetElm.dataset.joshIteration, 
-          duration = targetElm.dataset.joshDuration, 
-          delay = targetElm.dataset.joshAnimDelay; 
+        const name = targetElm.dataset.joshAnimName,
+          iteration = targetElm.dataset.joshIteration,
+          duration = targetElm.dataset.joshDuration,
+          delay = targetElm.dataset.joshAnimDelay;
         if (entry.isIntersecting) {
           let styles = `
             visibility: visible;
@@ -161,7 +161,7 @@ class Josh {
         if (this.onDOMChange) {
           const domChangeObserver = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
-              const newNodes = mutation.addedNodes; 
+              const newNodes = mutation.addedNodes;
               if (newNodes !== null) {
                 newNodes.forEach((node) => {
                   this.addCss(node);
