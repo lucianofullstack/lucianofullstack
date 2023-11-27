@@ -53,10 +53,38 @@ h1 + h1 { color: var(--c3); font-weight: 700; font-size: 2rem; margin-top: -1rem
 h1:first-of-type {line-height: 1.8ex;margin-top: 5rem;padding-top: 0rem;}
 h2 {padding-top: 2.7rem}
 
-#contact {float:right;display:table;color: var(--fg);padding:0;text-align: center;font-size:1.15rem;font-weight: 500}
-#contact #image {width:100px;height:68px;border-radius: 1rem;display: table-cell;margin-bottom:5px}
-#contact span {	padding:.2rem .6rem; border-radius: 2rem; border:2px solid var(--c3);}
-#contact:hover span {color:var(--bg);background-color: var(--c3);transition: all .3s ease-in;}
+#contact {
+	padding:0;
+	margin:0;
+	margin-top: -30px;
+	display:block;
+	position: relative;
+    z-index: 10;
+	float: right;
+	clear: right;
+	color: var(--fg);
+	text-align: center;
+	font-size:1.15rem;
+	font-weight: 500;
+	width:150px;
+	height:100%;
+}
+
+#contact #image {
+	height: 116px;
+	max-width: 150px;
+}
+
+#contact span {	
+	padding:.2rem 1rem; 
+	border-radius: 2rem; 
+	border:2px solid var(--c3);
+}
+#contact:hover span {
+	color:var(--bg);
+	background-color: var(--c3);
+	transition: all .3s ease-in;
+}
 
 #linkedin  {
     color: var(--fg);
@@ -92,6 +120,42 @@ footer{
 	padding-left:1.25rem;
 } footer span {display: none}
 
+.love{
+	padding:0 .2rem;
+	animation:1.5s heartThrob infinite;
+	display: inline-block
+}
+.love svg{
+	margin-bottom:-.1rem;
+	height:1.16rem;
+	fill: var(--c3);
+}
+
+@-moz-keyframes heartThrob {
+	10%{transform:scale(1.15)}
+	20%{transform:scale(1)}
+	40%{transform:scale(1.15)}
+	60%{transform:scale(1)}
+  }
+  @-webkit-keyframes heartThrob{
+	10%{transform:scale(1.15)}
+	20%{transform:scale(1)}
+	40%{transform:scale(1.15)}
+	60%{transform:scale(1)}
+  }
+  @-o-keyframes heartThrob{
+	10%{transform:scale(1.15)}
+	20%{transform:scale(1)}
+	40%{transform:scale(1.15)}
+	60%{transform:scale(1)}
+  }
+  @keyframes heartThrob{
+	10%{transform:scale(1.15)}
+	20%{transform:scale(1)}
+	40%{transform:scale(1.15)}
+	60%{transform:scale(1)}
+  }
+  
 .container { max-width: 1100px; height: auto; margin: 40px auto; }
 .row{display:flex;flex-direction:column;padding:0;width:100%}
 .row .column,.row .wide_column{display:block;flex:1 1 auto;margin-left:0;max-width:100%;width:100%}
