@@ -1,19 +1,29 @@
 @charset "UTF-8";
 :root                  {
-               --bg: #141922  ;
-               --fg: #f5f6fa  ;
-		       --c1: #222834  ;
-		       --c2: #81899C  ;
-		       --c3: #55B2E6  ;
-		       --c4: #1a202c  ;
+	--bg: #141922  ;
+	--fg: #f5f6fa  ;
+	--c1: #222834  ;
+	--c2: #81899C  ;
+	--c3: #55B2E6  ;
+	--c4: #1a202c  ;
 } [data-theme="light"] {
-	           --bg: #eafaff  ;
-	           --fg: #111728  ;
-		       --c1: #b5d5ff  ;
-		       --c2: #111728  ;
-		       --c3: #7895bf  ;
-		       --c4: #d5f5ff  ;
-} @font-face           {
+	--bg: #f1eee7  ;
+	--fg: #1e2752  ;
+	--c1: #baae94  ;
+	--c2: #6e7782  ;
+	--c3: #baae94  ;
+	--c4: #f1eee7  ;
+	/*
+    --bg: #eafaff  ;
+	--fg: #111728  ;
+	--c1: #b5d5ff  ;
+	--c2: #111728  ;
+	--c3: #7895bf  ;
+	--c4: #d5f5ff  ;
+    */
+} 
+
+@font-face           {
             font-family: 'Mona Sans';
                     src:
                          url('Mona-Sans.woff2') format('woff2 supports variations'),
@@ -105,13 +115,18 @@ a#top, a#goup {
 	border:none;
 } a#goup {
 	background: none;
-	border:2px solid var(--c1)
+	border:2px solid var(--c3);
+	fill: var(--c3);
+	stroke:var(--c3)
 } .hidden { display:none!important }
 #goup svg{height:20px ;width:20px}
 #goup { position:fixed; display: flex; align-items: center; justify-content: center; bottom:.65rem; right:0; border-radius: 0.25rem; 
 	height: 1.5rem; width: 1.5rem; padding:.3rem; fill:var(--c3);
-} #goup:hover { background:var(--c1) }
-
+} #goup:hover { 
+	border-color:var(--fg);
+	stroke: var(--fg);
+	fill: var(--fg);
+}
 footer{
 	text-align: left;
 	padding:0;
@@ -184,6 +199,12 @@ footer{
 		padding: 0;
 		top:1.5rem;
 		left:1rem;
+		text-shadow: 1px 1px rgba(255,255,255,.3);
+		filter: drop-shadow(2px 1px 1px rgba(125,125,125,.5)) hue-rotate(160deg) grayscale(.8) contrast(180%)  opacity(.8) brightness(105%);
+	}
+	[data-theme="light"] .skills h4 span {
+		text-shadow: 3px 1px rgba(0,0,0,.3);
+		filter: sepia(.8) grayscale(.2);
 	}
 	.skills .wide_column h5 { margin-left:8.4rem}
 	footer{text-align:right;padding-left:0}
@@ -196,10 +217,14 @@ footer{
 .card{    display: inline-block;
 	        width: 95%;
 	       height: 9rem;
-	border-radius: 10px;
+	border-radius: 20px;
 	   background: var(--c4);
 	margin-bottom: 3rem;
 	   box-shadow: 4px 4px var(--c3);
+	   border-top: 2px solid var(--c3);
+	   border-left: 2px solid var(--c3);
+	   border-right: 1px solid var(--c3);
+
 } .card h3 {
         font-size: 4.5rem;
        text-align: center;
@@ -483,7 +508,7 @@ footer{
 	margin-left:1.2rem;
    }
 }
-.timeline-title {text-align: center;font-weight: 400;color:var(--c2);margin-bottom: -1.45vw;}
+.timeline-title {text-align: center;font-weight: 400;color:var(--fg);margin-bottom: -1.45vw;}
 
 /* print */ 
 
